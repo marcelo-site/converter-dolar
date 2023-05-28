@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversor de Real</h1>
+        <form action="">
+            <div>
+                <label for="">Data da cotação: </label>
+                <input type="date" name="date" value="2000-09-11" id="" aria-valuetext="">
+            </div>
+            <div>
+                <label for="valor">Valor a ser convertido
+                </label>
+                <input type="text" value="100,00" name="valor" id="valor" placeholder="ex: 1.000,00 para R$ 1.000,00">
+            </div>
+            <div>
+                <label for="moeda">Moeda Estrangeira:</label>
+                <select name="moeda" id="moeda">
+                </select>
+            </div>
+            <div>
+                <p style="font-size: 1.2em;">Converter para:</p>
+                <div class="change" >
+                    <div>
+                        <label for="*brl">Moeda Corrente</label>
+                        <input type="radio" name="direction" value="*brl" id="*brl" checked>
+                    </div>
+                    <div>
+                        <label class="inactive" for="/brl">Moeda Estrangeira</label>
+                        <input type="radio" name="direction" value="/brl" id="/brl">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Converter">
+        </form>
+        <div class="none" id="result">
+            <h2>Resultado da conversão</h2>
+            <div></div>
+            <p>obs: A data utilizada é considerada um dia util, se a data que você selecionou não for um dia util é
+                considerado o ultimo dia util.
+            </p>
+        </div>
+    </div>
+    <!-- https://riconnect.rico.com.vc/blog/o-que-e-dolar-ptax/?psafe_param=1&campaignid=316171546&adgroupid=55392294370&feeditemid=&targetid=dsa-19959388920&loc_interest_ms=&loc_physical_ms=1031990&matchtype=&network=g&device=c&devicemodel=&ifmobile=&ifmobile=0&ifsearch=1&ifsearch=&ifcontent=0&ifcontent=&creative=340508776292&keyword=&placement=&target=&utm_source=google&utm_medium=cpc&utm_term=&utm_campaign=GGLE_PESQ_DSA&hsa_tgt=dsa-19959388920&hsa_net=adwords&hsa_kw=&hsa_grp=55392294370&hsa_acc=7134496929&hsa_ver=3&hsa_ad=340508776292&hsa_cam=316171546&hsa_mt=&hsa_src=g&gclid=CjwKCAjw1MajBhAcEiwAagW9MSvl0PgyzzAaVUA_WAqVdOymHU2m1hvhrJj-nbUkeuTaYh7jxO8nuxoCY9IQAvD_BwE -->
+</body>
+
+</html>
