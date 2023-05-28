@@ -27,7 +27,7 @@ label {
 
 .container {
     width: 600px;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
