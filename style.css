@@ -46,6 +46,7 @@ select {
     margin-bottom: 1em;
     border: 1px solid #ced4da;
     outline: none;
+    background-color: white;
 }
 
 input {
